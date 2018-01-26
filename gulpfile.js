@@ -6,8 +6,8 @@ const postcss = require('gulp-postcss'),
   gzip = require('gulp-gzip'),
   autoprefixer = require('gulp-autoprefixer'),
   sourcemaps = require('gulp-sourcemaps'),
-      browserSync = require('browser-sync'),
-rename = require('gulp-rename');
+  browserSync = require('browser-sync'),
+  rename = require('gulp-rename');
 
 // Dev task
 gulp.task('dev', () =>
@@ -25,7 +25,7 @@ gulp.task('dev', () =>
 gulp.task('reload', () => browserSync.reload());
 gulp.task('watch', ['dev'], () => {
   browserSync({ server: true }, function(err, bs) {
-    console.log(bs.options.getIn(["urls", "local"]));
+    console.log(bs.options.getIn(['urls', 'local']));
   });
   gulp.watch(['index.html'], ['reload']);
   gulp.watch(['src/sakura.css'], ['dev']);
@@ -38,15 +38,19 @@ gulp.task('build', () =>
     .pipe(postcss([next()]))
     .pipe(autoprefixer({ browsers: ['last 10 versions', '> 1%'], cascade: false }))
     .pipe(cleancss({ level: 2 }))
-    .pipe(rename({
-      basename: 'sakura.min',
-      extname: '.css'
-    }))
+    .pipe(
+      rename({
+        basename: 'sakura.min',
+        extname: '.css'
+      })
+    )
     .pipe(gulp.dest('dist/'))
     .pipe(gzip())
-    .pipe(rename({
-      basename: 'sakura',
-      extname: '.gz'
-    }))
+    .pipe(
+      rename({
+        basename: 'sakura',
+        extname: '.gz'
+      })
+    )
     .pipe(gulp.dest('dist/'))
 );
