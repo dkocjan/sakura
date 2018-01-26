@@ -1,3 +1,52 @@
+/* Variables */
+:root {
+  --font: 18px Muli, Arial, sans-serif;
+  --black: #2D2727;
+}
+
+/* Body */
 body {
   margin: 0;
+  font: var(--font);
+  color: var(--black);
+}
+
+/* Helper classes */
+.centered-text {
+  text-align: center;
+}
+.bold-text {
+  font-weight: 700;
+}
+.p0 {
+  padding: 0;
+}
+.m0 {
+  padding: 0;
+}
+
+/* Container */
+.container {
+  width: 100%;
+}
+
+/* Headings */
+h1 {
+  font-size: 1.75em;
+  font-weight: 700;
+}
+h2 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+h3 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+h4, h5, h6 {
+  font-size: 1.25em;
+  font-weight: 300;
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0.25em 0.25em;
 }
