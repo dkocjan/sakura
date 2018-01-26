@@ -1,0 +1,45 @@
+:root {
+  --bg-col-blue: #F1F0FF;
+  --bg-col-white: #FFF7EF;
+  --bg-col-pink: #FFE9E8;
+  --bg-col-gray: #636563;
+  --bg-col-gray-light: #E5E7E1;
+  --bg-col-green: #A3AE7E;
+  --bg-col-green-light: #C8CFB4;
+  --bg-col-green-dark: #5C604D;
+
+  --black: #181616;
+  --white: #FFFBFB;
+
+  --magenta: #CA278C;
+  --magenta-light: #B96A9A;
+  --magenta-dark: #9C1C6B;
+
+  --pink: #FFC3CE;
+  --pink-var: #FFCCCB;
+  --pink-primary: #D889B8;
+  --pink-intense: #FFBAD2;
+  --pink-secondary: #E47297;
+
+  --red: #AA0114;
+  --red-intense: #F20056;
+  --red-dark: #7F1917;
+
+  --brown: #7F3D17;
+
+  --violet: #8C489F;
+  --violet-dark: #443266;
+
+  --blue-light: #C3C3E5;
+
+  --aqua: #21B6A8;
+  --aqua-light: #CBFFFA;
+
+  --green: #9CC089;
+  --green-dimmed: #D6E3B5;
+  --green-dark: #6B824A;
+  --green-light: #D8F3C9;
+
+  --peach: #FFD197;
+  --peach-light: #FDE8D7;
+}
