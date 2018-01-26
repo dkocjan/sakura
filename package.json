@@ -1,0 +1,24 @@
+{
+  "name": "sakura",
+  "version": "1.0.0",
+  "description": "Minimalistic css framework",
+  "main": "sakura.css",
+  "repository": "https://github.com/dkocjan/sakura.git",
+  "bugs": {
+    "url": "https://github.com/dkocjan/sakura/issues"
+  },
+  "homepage": "https://github.com/dkocjan/sakura#readme",
+  "author": "dkocjan",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-gzip": "^1.4.2",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sourcemaps": "^1.12.1",
+    "postcss-cssnext": "^3.1.0"
+  },
+  "dependencies": {
+    "gulp-autoprefixer": "^4.1.0"
+  }
+}
