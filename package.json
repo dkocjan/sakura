@@ -11,8 +11,8 @@
   "author": "dkocjan",
   "license": "MIT",
   "scripts": {
-    "dev": "gulp dev",
-    "build": "gulp build",
+    "build:dev": "gulp dev",
+    "build:prod": "gulp build",
     "watch": "gulp watch"
   },
   "devDependencies": {

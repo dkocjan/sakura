@@ -2,6 +2,9 @@
 :root {
   --font: 18px Muli, Arial, sans-serif;
   --black: #2D2727;
+  --white: #FFFBFB;
+  --pink: #FFE9E8;
+  --gray: #636563;
 }
 
 /* Body */
@@ -24,6 +27,9 @@ body {
 .m0 {
   padding: 0;
 }
+.uppercase-text {
+  text-transform: uppercase;
+}
 
 /* Container */
 .container {
@@ -32,21 +38,74 @@ body {
 
 /* Headings */
 h1 {
-  font-size: 1.75em;
+  font-size: 2rem;
   font-weight: 700;
 }
 h2 {
-  font-size: 1.75em;
-  font-weight: 400;
+  font-size: 1.75rem;
+  font-weight: 700;
 }
 h3 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 h4, h5, h6 {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   font-weight: 300;
 }
 h1, h2, h3, h4, h5, h6, p {
-  margin: 0.25em 0.25em;
+  margin: 1rem 0.5rem;
+}
+
+/* Buttons */
+.button {
+  padding: .6rem 2rem;
+  font-size: 1rem;
+  /* Animation */
+  transition: all .35s;
+  transition-timing-function: cubic-bezier(0.310, -0.105, 0.430, 1.590);
+  /**/
+  display: inline-block;
+  background: var(--white);
+  margin: 0 10px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 5px 15px -5px rgba(0, 0, 0, .25);
+  border: 1px solid var(--black);
+  text-decoration: none;
+  cursor: pointer;
+}
+a.button, a.button:visited,a.button:active {
+  color: var(--black);
+}
+a.button:hover {
+  color: var(--white);
+}
+.button:hover {
+  border: 1px solid var(--black);
+  background: var(--gray);
+  color: var(--white);
+}
+
+.small-button {
+  padding: .5rem 1rem;
+  font-size: .85rem;
+}
+
+.large-button {
+  font-size: 1.25rem;
+  padding: .75rem 3rem;
+}
+.rounded-button {
+  border-radius: 15px;
+}
+
+.primary-button {
+  background: var(--pink);
+  color: #9C1C6B;
+}
+
+.secondary-button {
+  background: #CBFFFA;
+  color: #21B6A8;
 }

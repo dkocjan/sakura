@@ -17,8 +17,8 @@ Small, fast and responsive CSS framework 🌸
 3. Include Font: `<link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">`
 
 ##### Development
-`yarn start` - default gulp task, builds css to `/dist` in development, uses sourcemaps
+`yarn build:dev` - default gulp task, builds css to `/dist` in development, uses sourcemaps
 
-`yarn watch` - opens localhost with `/index.html` and watches for changes
+`yarn watch` - development mode with browsersync
 
-`yarn build` - builds css to `/dist` for production, minified and gzipped
+`yarn build:prod` - builds css to `/dist` for production, minified and gzipped

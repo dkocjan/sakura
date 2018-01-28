@@ -21,7 +21,7 @@ gulp.task('dev', () =>
     .pipe(browserSync.stream())
 );
 
-// Dev watch task (browser sync)
+// Dev watch task
 gulp.task('reload', () => browserSync.reload());
 gulp.task('watch', ['dev'], () => {
   browserSync({ server: true }, function(err, bs) {
